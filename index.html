@@ -7,7 +7,7 @@
 	<head>
 		<title>Thâmiris Barcarolo — Analista de Dados</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
 		<link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
@@ -40,6 +40,24 @@
 			.contact li.fa-linkedin::before { color:#0A66C2 !important; }
 			.contact li.fa-github::before { color:#181717 !important; }
 			.contact li.fa-file-pdf::before { color:var(--teal) !important; }
+			.logo-row { display:flex; align-items:center; gap:1em; flex-wrap:wrap; }
+			.lang-switch { display:inline-flex; align-items:center; gap:.4rem; font-size:.8rem; letter-spacing:.04em; }
+			.lang-switch .active { font-weight:700; color:var(--teal); }
+			.lang-switch a { color:#888; }
+			.lang-switch a:hover { color:var(--teal-l); }
+			.lang-switch .sep { color:#ccc; }
+			/* Responsivo robusto (sobrepõe o stacking por orientação do template) */
+			@media screen and (max-width: 980px) {
+				#banner { flex-direction: column-reverse !important; padding-top: 2em; }
+				#banner .content { width: 100% !important; }
+				#banner .image { width: 100% !important; height: auto !important; min-height: 0 !important; max-height: none !important; margin: 0 0 2em 0 !important; text-align: center; }
+				#banner .image img { width: 100% !important; max-width: 300px !important; height: auto !important; }
+			}
+			@media screen and (max-width: 736px) {
+				#header { flex-direction: column !important; align-items: flex-start !important; gap: .8em; }
+				#header > * { -ms-flex: none !important; flex: none !important; width: 100% !important; }
+				#header .icons { text-align: left !important; }
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -49,7 +67,10 @@
 
 					<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo"><strong>Thâmiris Barcarolo</strong> · Analista de Dados</a>
+						<div class="logo-row">
+							<a href="index.html" class="logo"><strong>Thâmiris Barcarolo</strong> · Analista de Dados</a>
+							<span class="lang-switch"><span class="active">PT</span><span class="sep">|</span><a href="en.html">EN</a></span>
+						</div>
 						<ul class="icons">
 							<li><a href="CV-Thamiris-Barcarolo.pdf" class="icon solid fa-file-pdf" style="color:#0F766E;" download title="Baixar currículo (PDF)"><span class="label">Currículo</span></a></li>
 							<li><a href="https://www.linkedin.com/in/thamirisbarcarolo/" class="icon brands fa-linkedin" style="color:#0A66C2;"><span class="label">LinkedIn</span></a></li>

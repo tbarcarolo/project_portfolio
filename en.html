@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP (html5up.net | @ajlkn) — CCA 3.0
+	Content: Thâmiris Barcarolo
+-->
+<html lang="en">
+	<head>
+		<title>Thâmiris Barcarolo — Data Analyst</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+		<link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+		<link rel="alternate icon" href="images/favicon.jpg" />
+		<style>
+			:root { --teal:#0F766E; --teal-d:#0b3b46; --teal-l:#14b8a6; }
+			a { color: var(--teal); }
+			a:hover { color: var(--teal-l); }
+			#header .logo strong { color: var(--teal); }
+			.features article .icon { color: var(--teal); }
+			#banner h2 { color: var(--teal); }
+			.button:hover { box-shadow: inset 0 0 0 1px var(--teal) !important; color: var(--teal) !important; background:transparent !important; }
+			.case-banner { position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:.15rem;
+				height:160px; border-radius:8px; color:#fff; background:linear-gradient(135deg,var(--teal),var(--teal-d)); margin-bottom:1rem; text-align:center; }
+			.case-banner .icon { position:absolute; top:12px; right:15px; color:#fff !important; font-size:1.5rem; opacity:.45; }
+			.case-stat { font-size:2.7rem; font-weight:800; line-height:1; }
+			.case-stat-label { font-size:.82rem; opacity:.92; }
+			.case-name { font-size:.7rem; text-transform:uppercase; letter-spacing:.12em; opacity:.85; margin-top:.55rem; }
+			.case-tag { display:inline-block; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase;
+				background:#e6f4f1; color:#0b574f; padding:.22rem .55rem; border-radius:4px; margin:.12rem .25rem .12rem 0; }
+			.case-meta { font-size:.85rem; color:#7a7a7a; font-weight:400; }
+			.badge-private { display:inline-block; font-size:.72rem; color:#7a7a7a; border:1px solid #e0e0e0; border-radius:4px; padding:.25rem .6rem; }
+			.mini-banner { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.45rem; height:130px; border-radius:8px; margin-bottom:.8rem; background:linear-gradient(135deg,#3fb8a6,var(--teal)); }
+			.mini-banner .icon { font-size:2rem; color:#fff !important; }
+			.mini-banner .mini-label { font-size:.72rem; text-transform:uppercase; letter-spacing:.12em; color:#fff; opacity:.92; }
+			.contact li.fa-envelope::before { color:#D44638 !important; }
+			.contact li.fa-linkedin::before { color:#0A66C2 !important; }
+			.contact li.fa-github::before { color:#181717 !important; }
+			.contact li.fa-file-pdf::before { color:var(--teal) !important; }
+			.logo-row { display:flex; align-items:center; gap:1em; flex-wrap:wrap; }
+			.lang-switch { display:inline-flex; align-items:center; gap:.4rem; font-size:.8rem; letter-spacing:.04em; }
+			.lang-switch .active { font-weight:700; color:var(--teal); }
+			.lang-switch a { color:#888; }
+			.lang-switch a:hover { color:var(--teal-l); }
+			.lang-switch .sep { color:#ccc; }
+			/* Responsivo robusto (sobrepõe o stacking por orientação do template) */
+			@media screen and (max-width: 980px) {
+				#banner { flex-direction: column-reverse !important; padding-top: 2em; }
+				#banner .content { width: 100% !important; }
+				#banner .image { width: 100% !important; height: auto !important; min-height: 0 !important; max-height: none !important; margin: 0 0 2em 0 !important; text-align: center; }
+				#banner .image img { width: 100% !important; max-width: 300px !important; height: auto !important; }
+			}
+			@media screen and (max-width: 736px) {
+				#header { flex-direction: column !important; align-items: flex-start !important; gap: .8em; }
+				#header > * { -ms-flex: none !important; flex: none !important; width: 100% !important; }
+				#header .icons { text-align: left !important; }
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="main">
+				<div class="inner">
+
+					<!-- Header -->
+					<header id="header">
+						<div class="logo-row">
+							<a href="en.html" class="logo"><strong>Thâmiris Barcarolo</strong> · Data Analyst</a>
+							<span class="lang-switch"><a href="index.html">PT</a><span class="sep">|</span><span class="active">EN</span></span>
+						</div>
+						<ul class="icons">
+							<li><a href="CV-Thamiris-Barcarolo-EN.pdf" class="icon solid fa-file-pdf" style="color:#0F766E;" download title="Download résumé (PDF)"><span class="label">Résumé</span></a></li>
+							<li><a href="https://www.linkedin.com/in/thamirisbarcarolo/" class="icon brands fa-linkedin" style="color:#0A66C2;"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:thamiris.barcarolo@gmail.com" class="icon solid fa-envelope" style="color:#D44638;"><span class="label">Email</span></a></li>
+							<li><a href="https://github.com/tbarcarolo" class="icon brands fa-github" style="color:#181717;"><span class="label">GitHub</span></a></li>
+						</ul>
+					</header>
+
+					<!-- Banner -->
+					<section id="banner">
+						<div class="content">
+							<header>
+								<h1>Hi, I'm Thâmiris.</h1>
+								<h2>Data Analyst — from the database to the decision dashboard.</h2>
+							</header>
+							<p>I work across the full data lifecycle: I model data in PostgreSQL/Supabase, write the queries and functions that power products in production, build import and validation pipelines, and turn raw data into business decisions. I work with Git and a structured process, aiming to grow toward Analytics Engineering / Data Engineering.</p>
+						</div>
+						<span class="image object"><img src="images/profile_picture.jpg" alt="Thâmiris Barcarolo" /></span>
+					</section>
+
+					<!-- About -->
+					<section>
+						<header class="main"><h1>About me</h1></header>
+						<p>I'm a Data Analyst working across the full data lifecycle — from data modeling to the dashboards leadership uses to make decisions. In my most recent role, I built and maintained data products in production.</p>
+						<p>My background is diverse: I hold a Bachelor's in Business Administration with a focus on International Trade and a <strong>Higher Diploma in Data Analytics</strong> from Ireland (City Colleges, <em>First Class Honours</em>), plus the <strong>AWS Cloud Practitioner</strong> certification. Before data, I spent time in the financial sector (Itaú) — business acumen I now use to turn data into decisions.</p>
+						<p>Today my focus is the more technical side of data: SQL, modeling, pipelines, and version control — on the path to <strong>Analytics Engineering</strong> and <strong>Data Engineering</strong>.</p>
+					</section>
+
+					<!-- Skills -->
+					<section>
+						<header class="major"><h1>Skills</h1></header>
+						<div class="features">
+							<article>
+								<span class="icon solid fa-database"></span>
+								<div class="content">
+									<h3>SQL &amp; Databases</h3>
+									<ul>
+										<li>PostgreSQL and Supabase in production.</li>
+										<li>SQL: joins, subqueries, CTEs, database functions/RPCs.</li>
+										<li>Data modeling and migrations.</li>
+										<li>Familiarity with BigQuery.</li>
+									</ul>
+								</div>
+							</article>
+							<article>
+								<span class="icon solid fa-project-diagram"></span>
+								<div class="content">
+									<h3>Pipelines &amp; Data Quality</h3>
+									<ul>
+										<li>ETL, batch import and validation.</li>
+										<li>Batch processing (pagination, anti-timeout).</li>
+										<li>Production data QA and fixes.</li>
+										<li>Source re-pointing and migration.</li>
+									</ul>
+								</div>
+							</article>
+							<article>
+								<span class="icon solid fa-code"></span>
+								<div class="content">
+									<h3>Languages &amp; Version Control</h3>
+									<ul>
+										<li>SQL and Python (Pandas, NumPy, Matplotlib).</li>
+										<li>JavaScript/TypeScript and React.</li>
+										<li>Git/GitHub: branches and Pull Requests.</li>
+										<li>Spec-Driven Development.</li>
+									</ul>
+								</div>
+							</article>
+							<article>
+								<span class="icon solid fa-chart-line"></span>
+								<div class="content">
+									<h3>BI &amp; Visualization</h3>
+									<ul>
+										<li>Looker Studio, Power BI, and Tableau.</li>
+										<li>Dashboards in React/Recharts.</li>
+										<li>Operational KPIs and reports.</li>
+										<li>Data storytelling.</li>
+									</ul>
+								</div>
+							</article>
+						</div>
+					</section>
+
+					<!-- Experience -->
+					<section>
+						<header class="main"><h1>Experience</h1></header>
+						<h2>Junior Data Analyst — Associação Cactus <span class="case-meta">· Remote · Jul 2025 – Present</span></h2>
+						<ul>
+							<li>I model PostgreSQL/Supabase databases and write the queries and functions (RPCs) that power products in production.</li>
+							<li>Built mass-import pipelines (batch processing to avoid timeouts, validation, error preview) and fixed the 1,000-record query limit.</li>
+							<li>Investigated and fixed data inconsistencies in production, restoring trust in leadership's metrics.</li>
+							<li>I develop operational dashboards in Looker Studio and React/Recharts.</li>
+						</ul>
+						<h2>Data Analyst (Volunteer) — Comunidade DS <span class="case-meta">· Remote · Apr 2025 – Sep 2025</span></h2>
+						<ul>
+							<li>Project mapping 7,000+ NGOs in Brazil: data cleaning, exploration, and enrichment.</li>
+							<li>Metrics (NGOs per capita, NGOs per state GDP), geographic analysis, and Looker Studio dashboards.</li>
+						</ul>
+						<p class="case-meta">Before data: ~4 years in the financial sector and sales (Itaú — Account Manager; Go Sinapse — SDR).</p>
+					</section>
+
+					<!-- Projects -->
+					<section>
+						<header class="major"><h1>Projects</h1></header>
+						<p>Real cases I delivered in my most recent role, presented anonymized — no sensitive data. Followed by foundational projects.</p>
+						<div class="posts">
+							<article>
+								<div class="case-banner"><span class="icon solid fa-paper-plane"></span><span class="case-stat">~88%</span><span class="case-stat-label">projected savings</span><span class="case-name">Email Platform</span></div>
+								<h3>An in-house platform to replace a SaaS</h3>
+								<p><strong>Problem:</strong> the organization paid ~R$ 22.5k/year for an email SaaS and wanted control and savings.</p>
+								<p><strong>What I did (technical lead):</strong> I built an in-house platform — a tag-segmented lead base, campaigns, delivery/open/click/bounce webhooks, an analytics dashboard, and unsubscribe (LGPD).</p>
+								<p><strong>Impact:</strong> ~88% projected savings (over R$ 16k/year), on a base of ~22k contacts.</p>
+								<p><span class="case-tag">Next.js</span><span class="case-tag">Supabase</span><span class="case-tag">PostgreSQL</span><span class="case-tag">SendGrid</span><span class="case-tag">Mautic</span></p>
+								<p><span class="badge-private">Business project — closed source</span></p>
+							</article>
+							<article>
+								<div class="case-banner"><span class="icon solid fa-server"></span><span class="case-stat">−75%</span><span class="case-stat-label">cost</span><span class="case-name">Stack Migration</span></div>
+								<h3>From a low-code product to an in-house stack</h3>
+								<p><strong>Problem:</strong> a critical product ran on a low-code tool — expensive and limited.</p>
+								<p><strong>What I did:</strong> I took part in rebuilding it on an in-house stack (Supabase/PostgreSQL) — data modeling, RLS, functions, and data migration.</p>
+								<p><strong>Impact:</strong> ~75% cost reduction, with more control and scalability.</p>
+								<p><span class="case-tag">Supabase</span><span class="case-tag">PostgreSQL</span><span class="case-tag">React</span><span class="case-tag">TypeScript</span></p>
+								<p><span class="badge-private">Business project — closed source</span></p>
+							</article>
+							<article>
+								<div class="case-banner"><span class="icon solid fa-chart-pie"></span><span class="case-stat">2.5k</span><span class="case-stat-label">students · 16 cities</span><span class="case-name">BI / KPI Dashboard</span></div>
+								<h3>A decision dashboard for leadership</h3>
+								<p><strong>Problem:</strong> leadership needed to track operational indicators from dozens of organizations in one place.</p>
+								<p><strong>What I did:</strong> I consolidated aggregates via database RPCs (one call per dashboard), with concentration analysis (Pareto), operational status, and data-quality metrics.</p>
+								<p><strong>Impact:</strong> a single view of ~2.5k students and 16 cities, supporting leadership decisions.</p>
+								<p><span class="case-tag">PostgreSQL</span><span class="case-tag">RPCs</span><span class="case-tag">React</span><span class="case-tag">Recharts</span></p>
+								<p><span class="badge-private">Business project — closed source</span></p>
+							</article>
+						</div>
+
+						<header class="major" style="margin-top:2.5rem;"><h2>Other projects &amp; foundations</h2></header>
+						<div class="posts">
+							<article>
+								<div class="mini-banner"><span class="icon solid fa-heartbeat"></span><span class="mini-label">Machine Learning</span></div>
+								<h3>ICU mortality prediction (ML)</h3>
+								<p>Prediction model with Logistic Regression + PCA on MIMIC-II clinical data.</p>
+								<p><span class="case-tag">Python</span><span class="case-tag">scikit-learn</span><span class="case-tag">Pandas</span></p>
+								<ul class="actions"><li><a href="https://github.com/tbarcarolo/MIMIC-II-SICU-Dataset-Analysis-and-Mortality-Prediction" class="button">Learn more</a></li></ul>
+							</article>
+							<article>
+								<div class="mini-banner"><span class="icon solid fa-table"></span><span class="mini-label">SQL Modeling</span></div>
+								<h3>Relational SQL database</h3>
+								<p>Relational modeling, primary/foreign keys, and an ER diagram (MySQL Workbench).</p>
+								<p><span class="case-tag">SQL</span><span class="case-tag">MySQL</span></p>
+								<ul class="actions"><li><a href="https://github.com/tbarcarolo/Anime-relationaldatabase-project-using-SQL-and-MySQL-Workbench" class="button">Learn more</a></li></ul>
+							</article>
+							<article>
+								<div class="mini-banner"><span class="icon solid fa-chart-bar"></span><span class="mini-label">Data Analysis</span></div>
+								<h3>Airbnb data analysis (Python)</h3>
+								<p>Exploratory analysis of listings with Python, Pandas, and Matplotlib.</p>
+								<p><span class="case-tag">Python</span><span class="case-tag">Pandas</span></p>
+								<ul class="actions"><li><a href="https://github.com/tbarcarolo/AirBnB-Listings-Analysis" class="button">Learn more</a></li></ul>
+							</article>
+						</div>
+					</section>
+
+					<!-- Contact -->
+					<section>
+						<header class="major"><h2>Let's talk?</h2></header>
+						<p>Open to remote opportunities in Data, BI, and Analytics Engineering.</p>
+						<ul class="contact">
+							<li class="icon solid fa-envelope"><a href="mailto:thamiris.barcarolo@gmail.com">thamiris.barcarolo@gmail.com</a></li>
+							<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/thamirisbarcarolo/">linkedin.com/in/thamirisbarcarolo</a></li>
+							<li class="icon brands fa-github"><a href="https://github.com/tbarcarolo">github.com/tbarcarolo</a></li>
+							<li class="icon solid fa-file-pdf"><a href="CV-Thamiris-Barcarolo-EN.pdf" download>Download résumé (PDF)</a></li>
+						</ul>
+					</section>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<!-- Footer -->
+		<footer id="footer" style="text-align:center; margin:40px 0 20px;">
+			<p style="font-size:0.9em; color:#666; margin:0;">© 2026 Thâmiris Barcarolo</p>
+			<p style="font-size:0.66em; color:#c4c4c4; margin:.25rem 0 0;">Template <a href="https://html5up.net/" style="color:#c4c4c4;">HTML5 UP</a></p>
+		</footer>
+
+		<!-- Analytics (GoatCounter — private dashboard at tbarcarolo.goatcounter.com) -->
+		<script data-goatcounter="https://tbarcarolo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+	</body>
+</html>
